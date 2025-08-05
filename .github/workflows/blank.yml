@@ -21,7 +21,7 @@ jobs:
         run: mvn clean package
 
       - name: Upload built plugin
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: BorderShrinkPlugin
           path: target/*.jar
